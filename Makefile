@@ -1,5 +1,7 @@
 SHELL=/bin/bash
 
+export GIT_BRANCH ?= 6.0
+
 ifndef ELASTIC_VERSION
 export ELASTIC_VERSION := $(shell ./bin/elastic-version)
 endif
